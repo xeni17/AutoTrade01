@@ -1,6 +1,7 @@
 """
-main.py - Entry point for Smart Money Bot
+main.py — Entry point for Smart Money Bot
 """
+
 import sys
 from loguru import logger
 from dotenv import load_dotenv
@@ -8,6 +9,7 @@ import os
 
 load_dotenv()
 
+# Setup logging
 log_level = os.getenv("LOG_LEVEL", "INFO")
 log_file = os.getenv("LOG_FILE", "logs/bot.log")
 
